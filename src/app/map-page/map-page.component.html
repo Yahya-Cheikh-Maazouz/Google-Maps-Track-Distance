@@ -1,0 +1,29 @@
+<div class=""> </div>
+<nav class="navbar navbar-expand-lg bg-light " style="height: 60px">
+    <div class="container-fluid">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+
+
+<div class="app-page ms-1  ">
+    <div #map class="rounded " id="map-canvas"></div>
+    <div class="rounded map-loader-container" *ngIf="!mapLoaded">
+        <div class="map-loader"></div>
+    </div>
+    <div class="map-pill" [ngClass]="{ 'map-pill-show': showMapPill }">
+        <div class="youps-pill-logo"></div>
+        <div class="youps-pill-content">
+            <div class="youps-pill-label">Your package is on its way!</div>
+            <div class="youps-pill-distance-time">{{ distance }} / {{ time }}</div>
+        </div>
+    </div>
+</div>
+
+
+

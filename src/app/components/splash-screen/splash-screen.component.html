@@ -1,0 +1,21 @@
+<div class="app-splash-screen" *ngIf="showSplash"
+    [ngStyle]="{ 
+        left: windowWidth,
+        opacity: opacityChange,
+        transition: splashTransition
+    }">
+    <div class="app-splash-screen-inner">
+
+        <div class="app-logo"></div>
+        <div style="margin-top: 40px;text-transform: uppercase;font-family: Tahoma, Geneva, sans-serif;
+font-size: 20px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #373D3F;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;" >Xpl Transport</div>
+        <div class="app-loader"></div>
+    </div>
+</div>
